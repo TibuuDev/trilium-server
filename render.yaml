@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: trilium
+    env: docker
+    repo: https://github.com/TibuuDev/trilium-server.git
+    plan: free
+    disk:
+      name: data
+      mountPath: /home/node/trilium-data
+      sizeGB: 1
